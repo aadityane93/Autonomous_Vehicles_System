@@ -1,0 +1,26 @@
+# Python virtualenvs / environments
+.venv/
+venv/
+.env/
+env/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.pytest_cache/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+#images
+**/*.jpg
+
+#model
+*.pth
+
+#deleted images txt
+deleted_images.txt
