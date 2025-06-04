@@ -9,23 +9,25 @@ from xy_dataset import XYDataset
 lane = "left_lane_data"
 
 
-# --- Configuration ---
-DATASET_DIR = f'{lane}_data'  # adjust if your dataset folder is different
-CATEGORIES = ['apex']
-LEARNING_RATE = 1e-4
+# --- Device Setup ---
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f"Using device: {device}")
 
 
 batch_sizes = [8, 16]
-epochs = [100, 50, 20, 120]
+epochs = [100, 20, 50, 150]
 
 for BATCH_SIZE in batch_sizes:
     for NUM_EPOCHS in epochs:
 
+        # --- Configuration ---
+        DATASET_DIR = f'{lane}'  # adjust if your dataset folder is different
+        CATEGORIES = ['apex']
+        LEARNING_RATE = 1e-4
+
+
         MODEL_OUTPUT_PATH = f'{lane}_e{BATCH_SIZE}_b{NUM_EPOCHS}.pth'
 
-        # --- Device Setup ---
-        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        print(f"Using device: {device}")
 
         # --- Transformations ---
         transform = transforms.Compose([
