@@ -2,7 +2,11 @@ import os
 import cv2
 import glob
 
-DATASET_DIR = "road_following_A/apex"  # adjust path if needed
+
+lane = "left_lane_data"
+
+
+DATASET_DIR = f"{lane}/apex"  # adjust path if needed
 deleted_log = "deleted_images.txt"
 count = 0
 
@@ -18,4 +22,4 @@ with open(deleted_log, "w") as log:
             except Exception as e:
                 print(f"[ERROR] Could not delete {img_path}: {e}")
 
-print(f"\n✅ Clean complete. Removed {count} unreadable images.")
+print(f"\n Clean complete. Removed {count} unreadable images.")
