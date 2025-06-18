@@ -6,7 +6,7 @@ from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
 from xy_dataset import XYDataset
 
-lane = "left_lane_data"
+lane = "322images"
 
 
 # --- Device Setup ---
@@ -14,8 +14,8 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f"Using device: {device}")
 
 
-batch_sizes = [8, 16]
-epochs = [100, 20, 50, 150]
+batch_sizes = [8]
+epochs = [10,15]
 
 for BATCH_SIZE in batch_sizes:
     for NUM_EPOCHS in epochs:

@@ -3,7 +3,7 @@ import cv2
 import glob
 
 
-lane = "left_lane_data"
+lane = "322images"
 
 
 DATASET_DIR = f"{lane}/apex"  # adjust path if needed
