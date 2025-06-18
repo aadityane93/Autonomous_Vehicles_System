@@ -15,7 +15,7 @@ print(f"Using device: {device}")
 
 
 batch_sizes = [8]
-epochs = [10,15]
+epochs = [15]
 
 for BATCH_SIZE in batch_sizes:
     for NUM_EPOCHS in epochs:
