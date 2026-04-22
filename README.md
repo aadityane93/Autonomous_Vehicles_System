@@ -1,3 +1,5 @@
+![Demo](./img_and_vid/obstracle2.gif)
+
 copy the data set from the robot using ssh with the command replace the road_following_A with the appropriate path the images are. eg road_following_B. replace the ip with the ip of the jetracer.
 
 ```
@@ -16,4 +18,3 @@ python clean_broken_images.py
 
 in (train_road_following.py) you can change the batch size, the number of epochs and the model name then run it.
 
-![Demo](./img_and_vid/obstracle2.gif)
