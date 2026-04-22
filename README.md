@@ -17,5 +17,5 @@ python clean_broken_images.py
 in (train_road_following.py) you can change the batch size, the number of epochs and the model name then run it.
 
 <p align="center" width="100%">
-<video src="[https://github.com/user-attachments/assets/563d36e5-1c92-49e6-aa88-c873a20ddf1d](https://github.com/aadityane93/Autonomous_Vehicles_System/blob/main/img_and_vid/obstracl2.mp4)" width="80%" controls></video>
+<video src="[https://github.com/aadityane93/Autonomous_Vehicles_System/blob/main/img_and_vid/obstracl2.mp4]" width="80%" controls></video>
 </p>
